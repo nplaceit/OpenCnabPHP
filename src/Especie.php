@@ -36,6 +36,7 @@ class Especie {
     private $sicoob = array();
     private $sicredi = array();
     private $bradesco = array();
+    private $unicred = array();
     private $santander = array();
     private $c6bank = array();
     private $bv = array();
@@ -190,6 +191,25 @@ class Especie {
         $this->bv[4] = array('abr' => "DS", 'txt' => 'Duplicata de Serviço');
         $this->bv[31] = array('abr' => "CC", 'txt' => 'Cartão de Crédito');
 
+        $this->unicred[1] = array('abr' => "DM", 'txt' => 'Duplicata');
+        $this->unicred[2] = array('abr' => "NP", 'txt' => 'Nota PromissÃ³ria');
+        $this->unicred[3] = array('abr' => "NS", 'txt' => 'Nota de Seguro');
+        $this->unicred[4] = array('abr' => "NS", 'txt' => 'Nota de Seguro');
+        $this->unicred[5] = array('abr' => "RC", 'txt' => 'Recibo');
+        $this->unicred[6] = array('abr' => "DR", 'txt' => 'Duplicata Rural');
+        $this->unicred[8] = array('abr' => "LC", 'txt' => 'Letra de CÃ¢mbio');
+        $this->unicred[9] = array('abr' => "WRT", 'txt' => 'Warrant');
+        $this->unicred[10] = array('abr' => "CH", 'txt' => 'Cheque');
+        $this->unicred[12] = array('abr' => "DS", 'txt' => 'Duplicata de ServiÃ£o');
+        $this->unicred[13] = array('abr' => "ND", 'txt' => 'Nota de DÃ©bito');
+        $this->unicred[14] = array('abr' => "TM", 'txt' => 'Triplicata Mercantil');
+        $this->unicred[15] = array('abr' => "TS", 'txt' => 'Triplicata de ServiÃ£o');
+        $this->unicred[18] = array('abr' => "FAT", 'txt' => 'Fatura');
+        $this->unicred[20] = array('abr' => "AP", 'txt' => 'ApÃ³lice de Seguros');
+        $this->unicred[21] = array('abr' => "ME", 'txt' => 'Mensalidade escolar');
+        $this->unicred[22] = array('abr' => "ME", 'txt' => 'Parcela de ConsÃ³rcio');
+        $this->unicred[99] = array('abr' => "DIV", 'txt' => 'Outros');
+
 
         $this->res['104'] = $this->caixa;
         $this->res['341'] = $this->itau;
@@ -200,6 +220,7 @@ class Especie {
         $this->res['748'] = $this->sicredi;
         $this->res['033'] = $this->santander;
         $this->res['084'] = $this->bradesco;
+        $this->res['136'] = $this->unicred;
         $this->res['246'] = $this->abc;
         $this->res['655'] = $this->bv;
 
